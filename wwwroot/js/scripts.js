@@ -11,7 +11,7 @@ function loadManufs() {
         for (i in items) {
             x += "<hr>";
             x += "<h4> Производитель: " + items[i].Name + " : <a href='" + items[i].Name + "'>" + items[i].Name + "</a></h4>";
-            x += "<button type='button' class='btn btn-sm btn-outline-secondary' onclick='DeleteManufs(" + items[i].ManufId + ");'>Удалить</button>";
+            x += "<button type='button' class='btn btn-sm btn-outline-secondary' onclick='deleteManufs(" + items[i].ManufId + ");'>Удалить</button>";
 
             for (j in items[i].Cars) {
                 x += "<div class='col-10'>";
