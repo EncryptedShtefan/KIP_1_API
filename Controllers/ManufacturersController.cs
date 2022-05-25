@@ -45,9 +45,9 @@ namespace KIP_1_API.Controllers
 
         // GET: api/Manufacturers
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Manufacturers>>> GetAllManufacturers()
+        public IEnumerable<Manufacturers> GetAllManufacturers()
         {
-            return await _context.Manufacturers.ToListAsync();
+            return _context.Manufacturers.Include(c => c.Cars);
         }
 
         // GET: api/Manufacturers/5
