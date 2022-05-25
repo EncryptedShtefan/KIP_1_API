@@ -10,8 +10,8 @@ function loadManufs() {
         items = JSON.parse(request.responseText);
         for (i in items) {
             x += "<hr>";
-            x += "<h4> Производитель: " + items[i].name + " : <a href='" + items[i].manufid + "'>" + items[i].manufid + "</a></h4>";
-            x += "<button type='button' class='btn btn-sm btn-outline-secondary' onclick='deleteManufs(" + items[i].manufid + ");'>Удалить</button>";
+            x += "<h4> Производитель: " + items[i].name + " : <a href='" + items[i].manufId + "'>" + items[i].manufId + "</a></h4>";
+            x += "<button type='button' class='btn btn-sm btn-outline-secondary' onclick='deleteManufs(" + items[i].manufId + ");'>Удалить</button>";
 
             for (j in items[i].Cars) {
                 x += "<div class='col-10'>";
