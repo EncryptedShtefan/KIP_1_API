@@ -11,12 +11,12 @@ function loadManufs() {
         for (i in items) {
             x += "<hr>";
             x += "<h4> Производитель: " + items[i].Name + " : <a href='" + items[i].Name + "'>" + items[i].Name + "</a></h4>";
-            x += "<button type='button' class='btn btn-sm btn-outline-secondary' onclick='DeleteManufacturers(" + items[i].ManufId + ");'>Удалить</button>";
+            x += "<button type='button' class='btn btn-sm btn-outline-secondary' onclick='DeleteManufs(" + items[i].ManufId + ");'>Удалить</button>";
 
-            for (j in items[i].cars) {
+            for (j in items[i].Cars) {
                 x += "<div class='col-10'>";
-                x += "<h4>" + items[i].cars[j].ModelName + "</h4>";
-                x += "<p>" + items[i].cars[j].YearOfProd + "</p><br>";
+                x += "<h4>" + items[i].Cars[j].ModelName + "</h4>";
+                x += "<p>" + items[i].Cars[j].YearOfProd + "</p><br>";
                 x += "</div>";
             }
         }
