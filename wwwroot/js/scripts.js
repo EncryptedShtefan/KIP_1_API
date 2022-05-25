@@ -13,12 +13,13 @@ function loadManufs() {
             x += "<h4> Производитель: " + items[i].name + " : <a href='" + items[i].manufId + "'>" + items[i].manufId + "</a></h4>";
             x += "<button type='button' class='btn btn-sm btn-outline-secondary' onclick='deleteManufs(" + items[i].manufId + ");'>Удалить</button>";
 
-            for (j in items[i].Cars) {
+            for (j in items[i].сars) { //не реализовано (я слишком тугодум)
                 x += "<div class='col-10'>";
-                x += "<h4>" + items[i].Cars[j].ModelName + "</h4>";
-                x += "<p>" + items[i].Cars[j].YearOfProd + "</p><br>";
+                x += "<h4>" + items[i].сars[j].ModelName + "</h4>";
+                x += "<p>" + items[i].сars[j].YearOfProd + "</p><br>";
                 x += "</div>";
             }
+
         }
         document.getElementById("manufsDiv").innerHTML = x;
     };
