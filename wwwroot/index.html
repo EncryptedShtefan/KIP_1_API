@@ -39,6 +39,9 @@
             <br>
             <hr>
             <h2>Список компаний - производителей</h2>
+            <div class="row">
+                <div id="manufsDiv" class="col-12"></div>
+            </div>
 
             <br>
             <hr>
@@ -48,7 +51,7 @@
                     <form>
                         <div class="form-group">
                             <label for="createDiv">Название</label>
-                            <input id="createDiv" class="form-control" type="text" placeholder=" " required>
+                            <input id="createDiv" class="form-control" type="text" placeholder="name" required>
                         </div>
                         <button onclick="createManufs();" type="submit" class='btn btn-dark'>Добавить производителя</button>
                         <button onclick="location.reload();" type="button" class='btn btn-success'>Обновить страницу</button>
